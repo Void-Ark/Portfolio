@@ -2,7 +2,7 @@ import {
   mobile,
   backend,
   creator,
-  web,
+  ML,
   javascript,
   typescript,
   html,
@@ -15,14 +15,17 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  coincent, 
+  codeclause,
   carrent,
   jobit,
   tripguide,
   threejs,
+  python,
+  fastapi,
+  postgresql,
+  tensorflow,
+
 } from "../assets";
 
 export const navLinks = [
@@ -42,15 +45,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "ML Developer",
+    icon: ML,
   },
   {
     title: "React Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "FastAPI Developer",
     icon: backend,
   },
   {
@@ -60,6 +63,22 @@ const services = [
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "fastapi",
+    icon: fastapi,
+  },
+  {
+    name: "postgresql",
+    icon: postgresql,
+  },
+//  {
+//    name: "tensorflow",
+//    icon: tensorflow,
+//  },
   {
     name: "HTML 5",
     icon: html,
@@ -72,101 +91,75 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+//  {
+//    name: "TypeScript",
+//    icon: typescript,
+//  },
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+//  {
+//    name: "Redux Toolkit",
+//    icon: redux,
+//  },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+//  {
+//    name: "Node JS",
+//    icon: nodejs,
+//  },
+//  {
+//    name: "MongoDB",
+//    icon: mongodb,
+//  },
+//  {
+//    name: "Three JS",
+//    icon: threejs,
+//  },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+//  {
+//    name: "figma",
+//    icon: figma,
+//  },
+//  {
+//    name: "docker",
+//    icon: docker,
+//  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Machine Learning Intern",
+    company_name: "Coincent",
+    icon: coincent,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2022 - October 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Done Real-life Implementation of various Machine Learning Algorithms on datasets for the Recognition and Analysis of the programs",
+      "Worked on NLP(Natural Language Processing) that acts as a bridge between the Human and the Machines.",
+      "Implemented Self-driving vehicle model using Tensorflow.",
+      "Tech Stack: Python, Jupyter, sklearn, NLTK, TensorFlow, Pandas, Numpy",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Python Developer Intern",
+    company_name: "Code Clause",
+    icon: codeclause,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2023 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed Graphical User Interface using Python and its related libraries.",
+      "Make User Interface using UI libraries of Python.",
+      "Implemented responsive design and ensuring simplicity.",
+      "Tech Stack: Python, PyGame, etc",
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -198,68 +191,47 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "OpenUp-Ark",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "It is a social web app in which users can share there thoughts and gets likes by another user.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "FastAPI",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Void-Ark/OpenUp-Ark",
   },
   {
-    name: "Job IT",
+    name: "ReviseArk",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "It is a web app in which user can save questions answer to learn it. This app will revise those question after limited period of gap and this gap increases as the proficiency increases.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "FastAPI",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "PostgreSQL",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+    source_code_link: "https://github.com/Void-Ark/ReviseArk",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
